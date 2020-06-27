@@ -1,0 +1,11 @@
+q : tampilkan data dari seluruh provinsi
+a : SELECT * FROM `tb_provinsi`
+
+q : tampilkan seluruh data provinsi beserta kabupaten
+a : SELECT * FROM tb_provinsi UNION SELECT * FROM tb_kabupaten
+
+q : tampilkan seluruh data provinsi yang berada di pulau tertentu
+a : SELECT * FROM `tb_provinsi` WHERE pulau = "jawa"
+
+q : tampilkan juga query post/tambah data 
+a : INSERT INTO `tb_provinsi` (`id`, `nama`, `diresmikan`, `photo`, `pulau`) VALUES (NULL, 'jawa barat', '2001-02-11', 'tes.jpeg', 'jawa')
